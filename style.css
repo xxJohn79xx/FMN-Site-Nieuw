@@ -1,0 +1,796 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 769px) {
+
+  /* ---Menu--- */
+  
+  #container {
+    background-color: red;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9;
+    box-shadow: 0px 0px 20px white;
+  } 
+
+  .container-box {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    grid-template-rows: 80px;
+    gap: 1.6%;
+    margin-left: 1.3%;
+  }
+
+  .container {
+    border: 1px solid black;
+    width: 99%;
+    height: 40px;
+    box-shadow: 3px 3px black;
+    margin-top: 25px;
+    border-radius: 15px;
+    background-color: #e71d24;
+    transition: .2s ease;
+  }
+
+  .container:active {
+    height: 42px;
+    width: 100%;
+  }
+
+  .container-yellow {
+    background-color: yellow;
+    border: 1px solid black;
+    width: 99%;
+    height: 40px;
+    box-shadow: 3px 3px black;
+    margin-top: 25px;
+    border-radius: 15px;
+    transition: .2s ease;
+  }
+
+  .container-yellow p {
+    text-align: center;
+    font-weight: 1000;
+    color: black;
+    margin: 10% 0 0 0;
+  }
+
+  .container-yellow:hover {
+    background-color: #e71d24;
+  }
+
+  .container-yellow a:hover {
+      color: yellow;
+  }
+
+  .container-yellow:active {
+    height: 42px;
+    width: 100%;
+  }
+
+  .container a:hover {
+    color: yellow;
+  }
+
+  .container p {
+    text-align: center;
+    font-weight: 1000;
+    color: black;
+    margin: 10% 0 0 0;
+  }
+  
+  .container a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .container-yellow a {
+    color: black;
+    text-decoration: none;
+  }
+
+  /* ---Titel--- */
+
+  .home-titel {
+    text-align: center;
+    margin: 10% 0;
+    position: relative;
+    top: 100px
+  }
+
+  .home-inleiding {
+    width: 50%;
+    margin: 0 4%;
+    position: relative;
+    top: 100px
+  }
+
+  .home-img {
+    margin: 0 4%;
+    position: relative;
+    top: 100px;
+  }
+
+  .home-img img {
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 5%;
+  }
+
+  .home-inleiding h2 {
+    background-color: #ec1c24;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+  }
+
+  /* ---footer--- */
+
+  footer {
+    background-color: red;
+    position: relative;
+    top: 180px;
+    height: 100px;
+    width: 100%;
+    box-shadow: 0 0 20px white;
+  }
+
+  .container-footer {
+    display: grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    grid-template-rows: 80px;
+    gap: 1.6%;
+    margin-left: 1.3%;
+  }
+
+  .footer {
+    border: 1px solid black;
+    width: 99%;
+    height: 40px;
+    box-shadow: 3px 3px black;
+    margin-top: 25px;
+    border-radius: 15px;
+    background-color: #e71d24;
+    transition: .2s ease;
+  }
+  
+  .footer:active {
+    height: 42px;
+    width: 100%;
+  }
+
+  .footer a:hover {
+    color: yellow;
+  }
+
+  .footer p {
+    text-align: center;
+    font-weight: 1000;
+    margin: 10% 0 0 0;
+  }
+
+  .footer a {
+    color: black;
+    text-decoration: none;
+  }
+ 
+  /* ---timechallenge--- */
+
+  .timechallenge-img {
+    width: 100%;
+  }
+
+  .timechallenge-img img {
+    width: 40%;
+    position: relative;
+    top: 120px;
+    margin-left: 30.5%;
+    border: 1px solid red;
+    border-radius: 5%;
+  }
+
+  .timechallenge-titel {
+    position: relative;
+    top: 100px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .timechallenge-div {
+    width: 80%;
+    margin-left: 9%;
+  }
+
+  .container-uitslag, .container-klassement {
+    display: grid;
+    width: 100%;
+    position: relative;
+    top: 160px;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50%;
+    gap: 6% 6%;    
+  }
+
+  .container-uitslag p, .container-klassement p {
+    text-align: center;
+    background-color: red;
+    border-radius: 5px;
+    color: black;
+    font-weight: 1000;
+  }
+
+  .klassement, .klassement img, .uitslag, .uitslag img  {
+    width: 100%;
+  }
+
+  .klassement, .uitslag {
+    margin-bottom: 10%
+  }
+  
+  .klassement img, .uitslag img {
+    border: 1px solid red;
+    border-radius: 5%; 
+  }
+
+  /* ---kampioenschap--- */
+
+  .kampioenschap {
+    position: relative;
+    top: 120px;
+    text-align: center;
+  }
+
+  /* ---overzicht--- */
+
+  .overzicht-div {
+    width: 80%;
+    margin-left: 9%
+  }
+
+  .container-overzicht {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50%;
+    width: 100%;
+    position: relative;
+    top: 140px;
+    gap: 6% 6%;
+  }
+
+  .overzicht img {
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 5%;
+  }
+
+  .overzicht-titel {
+    position: relative;
+    top: 120px;
+    text-align: center;
+  }
+
+  .overzicht p {
+    background-color: red;
+    width: 70px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    font-weight: 1000;    
+  }
+
+  /* ---media--- */
+
+  .media-titel {
+    text-align: center;
+    position: relative;
+    top: 120px;
+  }
+  .media-div {
+    width: 80%;
+    margin-left: 9%
+  }
+
+  .container-media {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 50%;
+    width: 100%;
+    position: relative;
+    top: 140px;
+    gap: 6% 6%;
+  }
+
+  .kampioenschap-vid iframe, .timechallenge-vid iframe, .funrace-vid iframe {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 10%;
+    border: 1px solid red;
+    border-radius: 5%;
+  }
+
+  .media-naam {
+    position: relative;
+    top: 140px;
+    background-color: red;
+    width: 220px;
+    color: black;
+    font-weight: 1000;
+    border-radius: 5px;
+  }
+
+  .media-naam p {
+    margin: 5%
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 348px) and (max-width: 768px) {
+
+  /* ---menu--- */
+
+  #header-box {
+    display: grid;
+    grid-template-columns: 9em 1fr;
+    grid-template-rows: 8em;
+    width: 99%;
+    gap: 5%;
+  }
+
+  .container-box {
+    background-color: red;
+    padding: 1%;
+    box-shadow: 0 0 20px;
+    border-radius: 0 0 5px 0;
+    margin: -10px 0;
+  }
+
+  .container a, .container-yellow a {
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+    margin: 0 0 0 10%;
+  }
+
+  .container-yellow {
+    background-color: yellow;
+    width: 70px;
+    border-radius: 5px;
+    margin: 0 0 0 6%;
+  }
+
+  /* ---home--- */
+
+  .home-titel {
+    text-align: center;
+    margin: 0 5% 0 0;
+    
+  }
+
+  .home-img {
+    position: relative;
+    top: 120px;
+    margin: 0 4%
+  }
+
+  .home-img img {
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 5%;
+  }
+
+  .home-inleiding {
+    position: relative;
+    top: 120px;
+    margin: 0 4%
+  }
+
+  .home-inleiding h2 {
+    background-color: red;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  /* ---footer--- */
+
+  footer {
+    background-color: red;
+    position: relative;
+    top: 160px;
+    width: 9em;
+    height: 13em;
+    padding: 4px 0 4px 0;
+    box-shadow: 0 0 20px;
+    border-radius: 0 5px 0 0; 
+  }
+  
+  .footer p {
+    margin: 12% 0 0 10%;
+  }
+
+  .footer a {
+    color: black;
+    font-weight: 1000;
+    text-decoration: none;
+  }
+
+  /* ---timechallenge--- */
+
+  .timechallenge-titel {
+    text-align: center;
+    margin: 0 5% 0 0;
+  }
+
+  .timechallenge-img {
+    position: relative;
+    top: 120px;
+    width: 50%;
+    display: grid;
+    margin-left: 17%
+  }
+
+  .timechallenge-img img {
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 5%;
+  }
+
+  .timechallenge-div {
+    margin-left: 10%;
+    width: 90%
+  }
+
+  .container-uitslag, .container-klassement {
+    display: grid;
+    width: 100%;
+    position: relative;
+    top: 160px;
+    grid-template-columns: 41.5% 41.5%;
+    grid-template-rows: 50% 50%;
+    gap: 6% 6%;
+    margin: 0 0 10% 0;    
+  }
+
+  .container-uitslag p, .container-klassement {
+    text-align: center;
+  }
+
+  .klassement, .klassement img, .uitslag, .uitslag img  {
+    width: 100%;
+  }
+  
+  .klassement p, .uitslag p {
+    background-color: red;
+    width: 160px;
+    color: black;
+    font-weight: 1000;
+    border-radius: 5px;
+  }
+
+  .klassement img, .uitslag img {
+    border: 1px solid red;
+    border-radius: 5%; 
+  }
+
+  /* ---kampioenschap--- */
+
+  .kampioenschap {
+    text-align: center;
+    margin: 0 5% 0 0
+  }
+
+  /* ---overzicht--- */
+
+  .overzicht-titel {
+    text-align: center;
+    margin: 0 5% 0 0;
+  }
+
+  .overzicht-div {
+    width: 90%;
+    margin-left: 10%
+  }
+
+  .container-overzicht {
+    display: grid;
+    grid-template-columns: 41.5% 41.5%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    position: relative;
+    top: 140px;
+    gap: 6% 6%;
+    margin-bottom: 10%;
+  }
+
+  .overzicht img {
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 5%;
+  }
+
+  .overzicht p {
+    background-color: red;
+    width: 70px;
+    border-radius: 5px;
+    color: black;
+    font-weight: 1000;
+    text-align: center;
+  }
+
+  /* ---media--- */
+
+  .media-titel {
+    text-align: center;
+    margin: 0 5% 0 0;
+  }
+
+  .media-div {
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  .container-media {
+    display: grid;
+    grid-template-columns: 41.5% 41.5%;
+    grid-template-rows: 50% 50%;
+    width: 100%;
+    position: relative;
+    top: 140px;
+    gap: 6% 6%;
+    margin-bottom: 10%;
+  }
+
+  .kampioenschap-vid iframe, .timechallenge-vid iframe, .funrace-vid iframe {
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 5%;
+    height: 130px
+  }
+
+  .media-naam {
+    position: relative;
+    top: 140px;
+    background-color: red;
+    width: 220px;
+    color: black;
+    font-weight: 1000;
+    border-radius: 5px;
+  }
+
+  .media-naam p {
+    margin-left: 5%
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 347px) {
+
+  /* ---menu--- */
+  
+  .container-box {
+    background-color: red;
+    padding: 1%;
+    box-shadow: 0 0 20px;
+    border-radius: 0 0 5px 0;
+    margin: -10px 0;
+    width: 9em;
+  }
+
+  .container a, .container-yellow a {
+    text-decoration: none;
+    color: black;
+    font-weight: 1000;
+    margin: 0 0 0 10%;
+  }
+
+  .container-yellow {
+    background-color: yellow;
+    width: 70px;
+    border-radius: 5px;
+    margin: 0 0 0 6%;
+  }
+
+  /* ---home--- */
+  
+  .home-titel {
+    text-align: center;
+    margin: 0 2%
+  }
+
+  .home-img {
+    width: 96%;
+    margin: 0 2%;
+  }
+
+  .home-img img {
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 5%;
+  }
+
+  .home-inleiding {
+    width: 90%;
+    margin: 0 0 0 2%;
+  }
+
+  .home-inleiding h2 {
+    color: black;
+    background-color: red;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  /* ---footer--- */
+
+  footer {
+    background-color: red;
+    position: relative;
+    top: 20px;
+    width: 9em;
+    height: 13em;
+    padding: 4px 0 4px 0;
+    box-shadow: 0 0 20px;
+    border-radius: 0 5px 0 0; 
+  }
+  
+  .footer p {
+    margin: 12% 0 0 10%;
+  }
+
+  .footer a {
+    color: black;
+    font-weight: 1000;
+    text-decoration: none;
+  }
+
+  /* ---timechallenge--- */
+
+  .timechallenge-titel {
+    text-align: center;
+    margin: 0 2%;
+  }
+
+  .timechallenge-img {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  .timechallenge-img img {
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 5%;
+  }
+
+  .uitslag, .klassement {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  .uitslag img, .klassement img {
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 5%;
+  }
+
+  .uitslag p, .klassement p {
+    background-color: red;
+    color: black;
+    font-weight: 1000;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  /* ---kampioenschap--- */
+
+  .kampioenschap {
+    text-align: center;
+    margin: 0 2%;
+  }
+
+  /* ---overzicht--- */
+
+  .overzicht-titel {
+    text-align: center;
+    margin: 0 2%;
+  }
+
+  .overzicht {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+  .overzicht img {
+    width: 100%;
+    border: 1px solid red;
+    border-radius: 5%;
+  }
+
+  .overzicht p {
+    background-color: red;
+    width: 65px;
+    text-align: center;
+    color: black;
+    font-weight: 1000;
+    border-radius: 5px;
+  }
+
+  /* ---media--- */
+
+  .media-titel {
+    text-align: center;
+    margin: 0 2%;
+  }
+
+  .container-media {
+    width: 90%;
+    margin: 2% 5%;
+  }
+
+  .kampioenschap-vid iframe, .timechallenge-vid iframe, .funrace-vid iframe {
+    width: 100%;
+    border: 1px solid red;
+    height: 180px;
+    border-radius: 5%;
+  }
+
+  .media-naam {
+    background-color: red;
+    width: 185px;
+    text-align: center;
+    margin: 5%;
+    color: black;
+    font-weight: 1000;
+    border-radius: 5px;
+  }
+}
